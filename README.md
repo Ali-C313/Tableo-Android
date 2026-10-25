@@ -213,7 +213,7 @@ git clone https://github.com/Ali-C313/Tableo-Android.git
 ```
 
 1. Projekt in **Android Studio** öffnen und Gradle Sync ausführen
-2. `app/google-services.json` liegt schon im Projekt
+2. In der Firebase Console die `google-services.json` herunterladen und nach `app/` legen (sie ist nicht im Repo)
 3. Für die Karte in `local.properties` eintragen:
    ```properties
    MAPS_API_KEY=dein-key
