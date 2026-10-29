@@ -9,9 +9,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.text.font.Font
 
-// Zwei bewusst unterschiedliche Schriftfamilien statt der Standardschrift:
-// Fraunces (Serife) für Überschriften/Preise, Manrope (Grotesk) für Fließtext & UI-Elemente.
-// Die Schriften liegen in res/font.
+/** Schriften der App: Fraunces für Überschriften und Preise, Manrope für Fließtext. */
 @Composable
 fun tableoTypography(): Typography {
     val displayFont = FontFamily(Font(R.font.fraunces_display))
