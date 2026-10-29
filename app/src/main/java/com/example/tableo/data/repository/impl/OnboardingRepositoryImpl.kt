@@ -11,7 +11,6 @@ private val ONBOARDING_COMPLETED_KEY = booleanPreferencesKey("onboarding_complet
 
 /**
  * Speichert per DataStore, ob das Onboarding schon gezeigt wurde. Bleibt auch nach App-Neustart erhalten.
- * Wo die Datei liegt, entscheidet die jeweilige Plattform (siehe createDataStore).
  */
 class OnboardingRepositoryImpl(
     private val dataStore: DataStore<Preferences>
