@@ -39,8 +39,7 @@ import org.koin.compose.koinInject
 import androidx.compose.ui.res.stringResource
 
 /**
- * Bestellhistorie des eingeloggten Kunden, mit Live-Status. Das Abmelden passiert im
- * Konto-Bereich, nicht hier. Deshalb gibt es hier keinen eigenen Abmelden-Button.
+ * Bestellhistorie des eingeloggten Kunden mit Live-Status.
  * Unten steht die Tab-Leiste mit "Bestellungen" als aktivem Reiter.
  *
  * @param onReorder Wird mit restaurantId + restaurantName aufgerufen, nachdem der Warenkorb
@@ -48,7 +47,7 @@ import androidx.compose.ui.res.stringResource
  * @param onTrackOrder Wird mit der Bestell-ID aufgerufen, um eine Lieferung live zu verfolgen
  * @param onOrderClick Wird mit der Bestell-ID aufgerufen, um die Details zu öffnen
  * @param onHomeTabClick Wird aufgerufen, wenn der "Start"-Reiter angetippt wird
- * @param onSettingsTabClick Wird aufgerufen, wenn der "Einstellungen"-Reiter angetippt wird
+ * @param onSettingsTabClick Wird aufgerufen, wenn der "Konto"-Reiter angetippt wird
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
