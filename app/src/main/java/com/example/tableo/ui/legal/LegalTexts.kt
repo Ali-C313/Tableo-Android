@@ -5,7 +5,10 @@ import androidx.compose.runtime.Composable
 import com.example.tableo.data.enums.LegalPage
 import androidx.compose.ui.res.stringResource
 
-// Platzhalter in [eckigen Klammern] vor der Veröffentlichung mit echten Daten füllen
+/**
+ * Texte für Impressum, Datenschutz und AGB.
+ * Platzhalter in [eckigen Klammern] vor der Veröffentlichung mit echten Daten füllen.
+ */
 @Composable
 fun legalContent(page: LegalPage): LegalContent = when (page) {
     LegalPage.IMPRESSUM -> LegalContent(
