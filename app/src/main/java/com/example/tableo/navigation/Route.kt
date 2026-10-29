@@ -61,8 +61,6 @@ sealed interface Route {
         val orderId: String
     ) : Route
 
-
-
     /** Dashboard mit offenen Bestellungen. */
     @Serializable
     data class StaffDashboard(
