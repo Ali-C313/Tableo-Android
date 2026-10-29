@@ -3,7 +3,7 @@ package com.example.tableo.util
 /**
  * Prüft, ob ein Restaurant anhand seiner Öffnungszeiten gerade geöffnet hat.
  * Unterstützt auch Zeiträume über Mitternacht (z.B. 18:00 - 02:00).
- * Rechnet nur mit Minuten, die aktuelle Uhrzeit kommt je nach Plattform aus [currentMinuteOfDay].
+ * Rechnet nur mit Minuten, die aktuelle Uhrzeit kommt aus [currentMinuteOfDay].
  */
 fun isRestaurantOpenNow(openingTime: String, closingTime: String): Boolean {
     return try {
