@@ -1,7 +1,5 @@
 package com.example.tableo.data.model
 
-
-
 /**
  * Ein Restaurant/eine Shisha-Bar, die an der App teilnimmt.
  *
