@@ -190,16 +190,6 @@ class SettingsViewModel(
         _deleteError.update { null }
     }
 
-    /** Ändert nur den Anzeigenamen. */
-    fun updateName(name: String) {
-        viewModelScope.launch {
-            _uiState.update { SettingsUiState.Saving }
-            authRepository.updateDisplayName(name)
-                .onSuccess { _uiState.update { SettingsUiState.Saved } }
-                .onFailure { e -> _uiState.update { SettingsUiState.Error(mapFirebaseAuthError(e)) } }
-        }
-    }
-
     /**
      * Speichert Name, E-Mail und Passwort nacheinander, aber nur was sich geändert hat.
      * Für E-Mail und Passwort meldet sich der Nutzer vorher mit dem aktuellen Passwort neu an,
