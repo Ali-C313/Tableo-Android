@@ -13,7 +13,7 @@ import com.example.tableo.util.getString
  * Übersetzt technische Firebase-Auth-Fehler in verständliche Meldungen in der eingestellten Sprache.
  * Unterschieden wird nach der Klasse der Firebase-Exception.
  */
-suspend fun mapFirebaseAuthError(e: Throwable?): String = when (e) {
+fun mapFirebaseAuthError(e: Throwable?): String = when (e) {
     // muss vor InvalidCredentials stehen, weil es davon erbt
     is FirebaseAuthWeakPasswordException -> getString(R.string.auth_error_weak_password)
     is FirebaseAuthInvalidCredentialsException -> getString(R.string.auth_error_wrong_credentials)
