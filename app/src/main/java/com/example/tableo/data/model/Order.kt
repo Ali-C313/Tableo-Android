@@ -1,6 +1,5 @@
 package com.example.tableo.data.model
 
-
 import com.example.tableo.data.enums.OrderStatus
 import com.example.tableo.data.enums.OrderType
 import com.example.tableo.data.enums.PaymentMethod
