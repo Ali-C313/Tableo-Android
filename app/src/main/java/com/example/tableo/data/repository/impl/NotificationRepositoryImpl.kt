@@ -34,7 +34,6 @@ class NotificationRepositoryImpl(
         ) return
 
         // Antippen öffnet die App
-        // MainActivity liegt im App-Modul, deshalb über den Start-Intent der App
         val intent = context.packageManager.getLaunchIntentForPackage(context.packageName)?.apply {
             flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
         }
