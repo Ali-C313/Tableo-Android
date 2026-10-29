@@ -5,25 +5,19 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
-import com.example.tableo.data.repository.LanguageRepository
-import com.example.tableo.data.repository.ThemeRepository
 import com.example.tableo.navigation.AppNavigation
+import com.example.tableo.ui.AppViewModel
 import com.example.tableo.ui.theme.TableoTheme
-import com.example.tableo.ui.theme.ThemeState
 import com.example.tableo.util.AppLocaleEnvironment
-import com.example.tableo.util.LanguageState
-import org.koin.compose.koinInject
+import org.koin.compose.viewmodel.koinViewModel
 
 /** Oberste Composable der App, wird von MainActivity gestartet. */
 @Composable
 fun App(
-    themeRepository: ThemeRepository = koinInject(),
-    languageRepository: LanguageRepository = koinInject()
+    appViewModel: AppViewModel = koinViewModel()
 ) {
-    // gespeichertes Erscheinungsbild und gespeicherte Sprache beim Start laden
     LaunchedEffect(Unit) {
-        ThemeState.mode = themeRepository.getThemeMode()
-        LanguageState.language = languageRepository.getLanguage()
+        appViewModel.loadSettings()
     }
 
     AppLocaleEnvironment {
