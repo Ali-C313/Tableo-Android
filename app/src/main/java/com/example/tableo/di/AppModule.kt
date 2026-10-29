@@ -25,6 +25,7 @@ import com.example.tableo.data.repository.impl.OrderRepositoryImpl
 import com.example.tableo.data.repository.impl.RestaurantRepositoryImpl
 import com.example.tableo.data.repository.impl.StaffRepositoryImpl
 import com.example.tableo.data.repository.impl.StorageRepositoryImpl
+import com.example.tableo.ui.AppViewModel
 import com.example.tableo.ui.customer.auth.CustomerAuthViewModel
 import com.example.tableo.ui.customer.orderDetail.MyOrderDetailViewModel
 import com.example.tableo.ui.customer.orders.MyOrdersViewModel
@@ -59,6 +60,7 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module
 
+/** Alle Abhängigkeiten der App für Koin. */
 val appModule = module {
     single { Firebase.firestore }
     single { Firebase.auth }
@@ -106,6 +108,7 @@ val appModule = module {
     viewModelOf(::MyOrdersViewModel)
     viewModelOf(::SettingsViewModel)
     viewModelOf(::StaffAnalyticsViewModel)
+    viewModelOf(::AppViewModel)
     viewModelOf(::SplashViewModel)
     viewModelOf(::OnboardingViewModel)
     viewModelOf(::DriverOrdersViewModel)
