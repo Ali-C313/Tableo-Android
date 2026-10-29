@@ -1,7 +1,5 @@
 package com.example.tableo.data.model
 
-
-
 /**
  * Ein Eintrag in der Speisekarte eines Restaurants.
  *
