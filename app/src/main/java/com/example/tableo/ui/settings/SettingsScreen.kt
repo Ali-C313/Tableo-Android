@@ -178,7 +178,7 @@ fun SettingsScreen(
                 }
             }
 
-            // Mitarbeiter und Fahrer erkennt die App am Konto, ein PIN ist nicht nötig
+            // Mitarbeiter und Fahrer erkennt die App am Konto
             if (isLoggedIn) {
                 SectionTitle(stringResource(R.string.settings_section_staff))
                 SettingsGroup {
