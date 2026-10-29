@@ -48,8 +48,8 @@ import org.koin.compose.viewmodel.koinViewModel
 import androidx.compose.ui.res.stringResource
 
 /**
- * Bestell-Dashboard für das Personal eines Restaurants. Restaurant-ID und -Name
- * kommen über die Route direkt ins ViewModel, nicht mehr als Parameter hierher.
+ * Bestell-Dashboard für das Personal eines Restaurants.
+ * Restaurant-ID und -Name kommen über die Route ins ViewModel.
  *
  * @param onBackClick Wird aufgerufen, wenn der Zurück-Pfeil angetippt wird
  * @param onArchiveClick Wird aufgerufen, wenn "Archiv" angetippt wird
