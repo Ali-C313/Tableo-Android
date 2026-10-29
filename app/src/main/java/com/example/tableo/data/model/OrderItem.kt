@@ -1,6 +1,5 @@
 package com.example.tableo.data.model
 
-
 /**
  * Eine Position innerhalb einer Bestellung.
  * Name und Preis werden beim Bestellen aus dem [MenuItem] übernommen (Snapshot),
