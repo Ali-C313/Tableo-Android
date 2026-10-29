@@ -48,7 +48,7 @@ fun Order.orderTypeLabel(): String = when (orderType) {
 }
 
 /** Wie [orderTypeLabel], aber außerhalb von Compose, z.B. für Benachrichtigungen. */
-suspend fun Order.orderTypeText(): String = when (orderType) {
+fun Order.orderTypeText(): String = when (orderType) {
     OrderType.DINE_IN -> getString(R.string.order_type_table, tableNumber.toString())
     OrderType.PICKUP -> getString(R.string.order_type_pickup_at, pickupTime.orEmpty())
     OrderType.DELIVERY -> getString(R.string.order_type_delivery)
